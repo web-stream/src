@@ -1,37 +1,84 @@
-## Welcome to GitHub Pages
+[![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=true)](http://www.apache.org/licenses/LICENSE-2.0)
+[![gitter](https://badges.gitter.im/Join%20Chat.svg)][gitter]
 
-You can use the [editor on GitHub](https://github.com/jloads-src/src/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+![logo.jloads.com](https://logo.jloads.com/6/cover.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# /jloads-src/src
+this is old repositories with all modules inside, now are splitted:
 
-### Markdown
+## List of jloads modules
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### CORE
++ [jloads.js](jloads.js)
++ https://github.com/jloads-src/core
 
-```markdown
-Syntax highlighted code block
+### URL
++ https://github.com/jloads-src/url
++ [jloads-url.js](jloads-url.js)
 
-# Header 1
-## Header 2
-### Header 3
+### EVENT
++ https://github.com/jloads-src/event
++ [jloads-event.js](jloads-event.js)
 
-- Bulleted
-- List
+### TARGET 
++ https://github.com/jloads-src/target 
++ [jloads-target.js](jloads-target.js)
 
-1. Numbered
-2. List
+### FILE
++ https://github.com/jloads-src/file
++ [jloads-file.js](jloads-file.js)
 
-**Bold** and _Italic_ and `Code` text
+### FORM
++ https://github.com/jloads-src/form
++ [jloads-form.js](jloads-form.js)
 
-[Link](url) and ![Image](src)
-```
+### OBJ (JSON)
++ https://github.com/jloads-src/obj
++ [jloads-obj.js](jloads-obj.js)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jloads-src/src/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# [Biblioteka jLoads](https://docs.jloads.com/README.md)
 
-### Support or Contact
++ jLoads oferuje streamowanie interfejsu aplikacji w natywnym JS 
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
++ jLoads wspiera natywne rozwiązania, ułatwia pracę z kodem zastanym (legacy code)
+
++ jLoads został stworzony dla programistów szukających prostych rozwiązań, by ułatwić modularyzację aplikacji
+
++ jLoads wspiera proces refaktoryzacji, gdyż pozwala poprzez modularyzację ominięcie pułapek stojących za najnowszymi wersjami frameworków oraz troszczeniem się o ich aktualizacje.
+
++ Obecnie rozwiązanie jLoads dotyczy frontendu, ale trwają pracę nad wykorzystaniem NodeJS do wsparcia backendu.
+
+## More ...
+ + [All projects on github](https://github.com/jloads/)
+ + [jLoads on github](https://github.com/jloads/get/)
+ + [changelog.md](changelog.md)
+
+
+## How to use? 
+
+
+
+Load to Your project [download jloads.js](https://get.jloads.com/jloads.min.js)
+
+
+       <script src="//get.jloads.com/jloads.min.js">
+           // Jloads is loading any media and content dynamically
+       </script>
+
+
+Add dependences, example with jquery and bootstrap, asynchronus, without special tags, only jloads logic to controll JS loading
+
+
+       <script>
+           // load content ASAP with dependencies, that jquery must be first and after that bootstrap
+           jl.file({
+               "//code.jquery.com/jquery-3.5.1.min.js": [
+                   "//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js",
+                   "//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+               ]
+           });
+       </script>
+
+
