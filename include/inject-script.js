@@ -1,5 +1,5 @@
 /**
- * 	injectScript('test.js', () => {
+ * 	inject_script('test.js', () => {
 		console.log('test');
 		setInterval(test, 1000);
 	});
